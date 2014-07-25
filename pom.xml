@@ -1,0 +1,38 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+     <modelVersion>4.0.0</modelVersion>
+     <groupId>br.com.alexandrefvb</groupId>
+     <artifactId>java-process-control-library</artifactId>
+     <version>0.0.1-SNAPSHOT</version>
+     <description>Biblioteca para controle de processos em Java que visa fornecer de forma independente de plataforma o controle de processos pelo PID.</description>
+
+     <dependencies>
+          <dependency>
+               <groupId>net.java.dev.jna</groupId>
+               <artifactId>jna</artifactId>
+               <version>4.1.0</version>
+          </dependency>
+          <dependency>
+               <groupId>net.java.dev.jna</groupId>
+               <artifactId>jna-platform</artifactId>
+               <version>4.1.0</version>
+          </dependency>
+
+     </dependencies>
+
+     <build>
+          <plugins>
+               <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.1</version>
+                    <configuration>
+                         <!-- http://maven.apache.org/plugins/maven-compiler-plugin/ -->
+                         <source>1.6</source>
+                         <target>1.6</target>
+                    </configuration>
+               </plugin>
+          </plugins>
+     </build>
+
+</project>
